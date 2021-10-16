@@ -1,3 +1,5 @@
+%% bus data
+% bus_i V_b V_0 theta_0 area_num region_num
 Bus.con = [...
     1 1.00 1.045   -0.1562 1 1; 
     2 1.00 0.98    -0.0171 1 1;
@@ -67,9 +69,15 @@ Bus.con = [...
    66 1.00 0.9194  -0.1778 1 1;
    67 1.00 0.9280  -0.1994 1 1;
    68 1.00 0.9483  -0.1757 1 1;]; 
+   
+%% SW data
+% bus_i S_n V_n v_g theta_g q_Gmax q_Gmin v_Gmax v_Gmin u
 
 SW.con = [ ...
   16 100.0 1.00 1.00 0.00 0.8 -0.2 1.1 0.9 40.00 1];
+  
+%% PV data
+% bus_i S_n V_n p_G v_G q_Gmax q_Gmin v_Gmax v_Gmin u
    
 PV.con = [ ...
   1 100.0 1.00 2.5   1.045  0.8 -0.2   1.1 0.9 1;
@@ -88,6 +96,9 @@ PV.con = [ ...
  14 100.0 1.00 17.85 1.00   0.8 -0.2   1.1 0.9 1;
  15 100.0 1.00 10.00 1.00   0.8 -0.2   1.1 0.9 1;
  ];
+ 
+%% PQ data
+% bus_i S_n V_n p_L v_L v_Lmax v_Lmin u
 
 PQ.con = [ ...
   17 100.0 1.00 60.00  3.00     1.1 0.9 1;

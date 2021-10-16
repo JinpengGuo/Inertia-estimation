@@ -71,7 +71,7 @@ Bus.con = [...
    68 1.00 0.9483  -0.1757 1 1;]; 
    
 %% SW data
-% bus_i S_n V_n v_g theta_g q_Gmax q_Gmin v_Gmax v_Gmin u
+% bus_i S_n V_n v_g theta_g q_Gmax q_Gmin v_Gmax v_Gmin p_G0 u
 
 SW.con = [ ...
   16 100.0 1.00 1.00 0.00 0.8 -0.2 1.1 0.9 40.00 1];
@@ -98,7 +98,7 @@ PV.con = [ ...
  ];
  
 %% PQ data
-% bus_i S_n V_n p_L v_L v_Lmax v_Lmin u
+% bus_i S_n V_n p_L q_L v_Lmax v_Lmin u
 
 PQ.con = [ ...
   17 100.0 1.00 60.00  3.00     1.1 0.9 1;
